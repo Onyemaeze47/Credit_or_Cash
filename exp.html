@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="exp.css"/>
+  </head>
+  <body>
+
+    <div class="home-wrapper">
+    <nav class="navbar">
+      <div class="brand-logo">
+        <a href="#"><img src="credit-on-cash.jpg" /></a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+    
+    
+    <div class="section">
+      <h1>
+        Kick outages out <br/>
+        with Credit or Cash!!
+      </h1>
+      <br/>
+      <h3>
+        Easy and convenient way to pay for your Electricity, <br/>
+        Cable TV, Data Bundle and Airtime
+      </h3>
+      <div class="flex-container">
+        <div id="button" class="airtime">Airtime</div>
+        <div id="btn" class="electricity">Electricity</div>
+        <div id="press" class="cable">CableTV</div>
+        <div id="hold" class="payment">View Last Payment</div>
+      </div>
+    </div>
+
+    <div class="bg-modal">
+      <div class="modal-contents">
+        <div class="close">&times;</div>
+        <h2 class="pos">Buy Airtime</h2>
+
+        <div>
+          <form id="form">
+            <label for="network">Network</label>
+            <select id="network" name="network">
+              <option value="network">Select network</option>
+              <option value="airtel">Airtel</option>
+              <option value="glo">GLO</option>
+              <option value="9mobile">9Mobile</option>
+              <option value="mtn">MTN</option>
+            </select>
+
+            <label for="Phone">Phone Number</label>
+            <input type="text" id="Phone" name="phone number" />
+
+            <label for="Amt">Amount</label>
+            <input type="text" id="lname" name="Amount" />
+
+            <input type="submit" value="Pay" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="conts">
+        <div class="quit">&times;</div>
+        <h2 class="pos">Buy Electricity Tokens</h2>
+
+        <div>
+          <form id="temp" action="/">
+            <div class="row">
+              <div class="column">
+                <label for="disco">Disco</label>
+                <select id="disco" name="disco">
+                  <option value="disco">Select Disco</option>
+                  <option value="aedc">AEDC</option>
+                  <option value="ekedc">EKEDC</option>
+                  <option value="ikedc">IKEDC</option>
+                  <option value="phd">PHD</option>
+                </select>
+              </div>
+              <div class="column">
+                <label for="plan">Select Plan Type</label>
+                <select id="plan" name="plan-type">
+                  <option value="plan-type">Select plan type</option>
+                  <option value="pre-paid">Pre-paid</option>
+                  <option value="post-paid">Post-paid</option>
+                </select>
+              </div>
+            </div>
+            <label for="Phone">Meter Number</label>
+            <input type="text" id="metre" name="meter number" />
+
+            <label for="Phone">Phone Number</label>
+            <input type="text" id="numb" name="phone number" />
+
+            <label for="Phone">Email</label>
+            <input type="text" id="email" name="email address" />
+
+            <label for="Amt">Amount &#8358;</label>
+            <input type="number" id="amnt" name="Amount" />
+
+            <h5 class="fee">
+              Payable amount includes ₦100.00 fee plus 1.5% payment gateway
+              charge Pay
+            </h5>
+            <br>
+            <h5 id="suc" hidden >
+              Details valid
+            </h5>
+
+            <h5 id="failure" hidden>
+              Details invalid
+            </h5> 
+
+            <input type="submit" id="PayForElectricity" value="Pay" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="mod">
+      <div class="cont">
+        <div class="stop">&times;</div>
+        <h2 class="pos">CableTv Subscription</h2>
+
+        <div>
+          <form id="rept" action="/">
+            <label for="cabletv">CableTv Provider</label>
+            <select id="cabletv" name="cabletv">
+              <option value="provider">Select Provider</option>
+              <option value="dstv">DSTV</option>
+              <option value="gotv">GOTV</option>
+              <option value="STARTIMES">STARTIMES</option>
+            </select>
+
+            <label for="bouquet">Select Bouquet</label>
+            <select id="bouquet" name="bouquet">
+              <option value="network">Choose Bouquet</option>
+              <option value="airtel">Airtel</option>
+              <option value="glo">GLO</option>
+              <option value="9mobile">9Mobile</option>
+              <option value="mtn">MTN</option>
+            </select>
+
+            <div class="row">
+              <div class="column">
+                <label for="Phone">Smart Card Number</label>
+                <input type="text" id="smartcard" name="smart card number" />
+              </div>
+              <div class="column">
+                <label for="PHno">Phone Number</label>
+                <input type="text" id="phNum" name="number" />
+              </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input type="text" id="mail" name="email" />
+
+            <h5 class="fee">
+              Payable amount includes ₦100.00 fee plus 1.5% payment gateway
+              charge
+            </h5>
+            <input type="submit" value="Pay" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modarl">
+      <div class="modarl-cont">
+        <div class="off">&times;</div>
+        <h2 class="pos">My Transaction History</h2>
+
+        <div>
+          <form id="serv" action="/">
+            <label for="service"></label>
+            <select id="service" name="service">
+              <option value="service">Select Service</option>
+              <option value="airtime">Airtime</option>
+              <option value="electricity">Electricity</option>
+              <option value="cableTV">CableTV</option>
+            </select>
+
+            <input type="text" placeholder="Enter Transaction Phone Number"/>
+
+            <input type="submit" value="Lookup"/>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Gallery">
+      <div class="flex-container2">
+        <p class="h-flex">why creditORcash?</p>
+        <p class="k-flex">
+          You can trust us to provide service, even when you are out of cash;
+          Credit or Cash? we got <br/>
+          you.
+        </p>
+
+        <div class="row2">
+          <div class="column2">
+            <img src="light-bulb.png" alt="bulb"/>
+            <h6 class="tidy">We are here for you!</h6>
+            <h3>
+              Why miss your favourite programme because <br/>
+              your subscription or power credit is exhausted. <br/>
+              You can buy now and pay later.
+            </h3>
+          </div>
+          <div class="column2">
+            <img src="chatting-speech.png" alt="chat"/>
+            <h6 class="tidy">Outstanding support</h6>
+            <h3>
+              Our customer support is second to none &#45; <br/>
+              users rave about how we don&#39;t rest until every <br/>
+              issue is solved to their satisfaction.
+            </h3>
+          </div>
+          <div class="column2">
+            <img src="shopping-cart.png" alt="cart"/>
+            <h6 class="tidy">Secure checkout</h6>
+            <h3>
+              With 128-bit SSL security with advanced <br/>
+              encryption you are guaranteed that your <br/>
+              purchases are safe.
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex container3">
+        <h2 class="about">About Us</h2>
+        <div class="row1">
+          <div class="column11">
+            <img src="creditorcash.png" alt="cash"/>
+          </div>
+          <div class="column12">
+            <p>
+              creditORcash is a leading service provider in Africa&#39;s largest
+              economy, Nigeria.
+            </p>
+            <br>
+            <p>
+              We are pack leaders who are taking advantage of cutting-edge
+              technology and user-friendly mobile services to create avenues for
+              utility payment in Nigeria.
+            </p>
+            <br />
+            <p>
+              With creditORcash you can buy utilities like Electricity, Data
+              Bundles, Cable TV, and Airtime from the comfort of your home.
+            </p>
+            <br />
+            <p>
+              Not only that, we offer you a
+              <strong class="borrow">borrow-now-and-pay-later</strong> service.
+              That means you can borrow energy, Dstv bundles etc. and pay on
+              your next subscription.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container4">
+        <h2 class="ours">Our Values</h2>
+        
+        <div class="row3">
+          <div class="column3">
+            <div class="card">
+              <h3 class="subj">We are customer-centric</h3>
+              <p class="obj">You, our customer is at the core of our service. You are first! We are here to serve you!</p>
+            </div>
+          </div>
+        
+          <div class="column3">
+            <div class="card">
+              <h3 class="subj">We are fast and efficient</h3>
+              <p class="obj">Our platform is built on very robust technologies. That is why we are confident in our ability to deliver on time.</p>
+            </div>
+          </div>
+          
+          <div class="column3">
+            <div class="card">
+              <h3 class="subj">Integrity</h3>
+              <p class="obj">We do not believe in talking alone. We believe in delivering promises made.</p>
+            </div>
+          </div>
+          
+          <div class="column3">
+            <div class="card">
+              <h3 class="subj">Professional Conduct</h3>
+              <p class="obj">Professionalism is our watch word.</p>
+            </div>
+          </div>
+          <div class="column3">
+            <div class="card">
+              <h3 class="subj">Sustainability</h3>
+              <p class="obj">We are built to last and will continue to explore unique ways we can scale our service and serve you optimally.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="flex-container5">
+            <h2 class="mission">Our Mission</h2>
+            <ul>
+            <li class="sat">To satisfy our customers with the most reliable and efficient services</li>
+            <li class="sat">Take advantage of emerging technologies to offer our customers the simplest ways to get utility on our platform. With just a click, you are good to go!</li>
+            </ul>
+        </div>
+
+        <div class="flex-container6">
+        <h2 class="freq">Frequently Asked Questions</h2>
+        <button class="collapsible">How can i view my last transaction?</button>
+        <div class="content">
+        <p>Details of your last transaction are save in local storage on your device. To view, please click the “View last payment” button above.</p>
+        </div>
+        <button class="collapsible">I made payment but I have not received my order. What should I do?</button>
+        <div class="content">
+        <p>Please click on the Chat button at the bottom right of your screen and send us a message. Please quote your transaction reference.</p>
+        </div>
+        <button class="collapsible">What are your live customer service hours?</button>
+        <div class="content">
+        <p>We are live between 8am and 7pm (UTC + 1) during week days; and 12 noon to 6pm at weekends and public holidays.</p>
+        </div>
+        </div>
+
+
+    </div>
+
+        <div class="footer">
+            <footer>
+                <br>
+                    <p><h3>&copy; Credit or Cash 2021</h3></p>
+                <br>
+                    <p><h3>Built by SaltingStein</h3></p>
+            </footer>
+        </div>
+
+    <script src="exp.js"></script>
+  </body>
+</html>
